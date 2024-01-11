@@ -22,7 +22,7 @@ const dataBaseConnect = async () => {
     await sql.connect(sqlConfig);
     console.log('DATABASE connected!');
   } catch (error) {
-    console.log('DATABASE connection error', err);
+    console.log('DATABASE connection error', error);
   }
 };
 
